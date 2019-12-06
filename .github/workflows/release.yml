@@ -23,4 +23,4 @@ jobs:
           TORCH_V=v$(grep '^torch' requirements.txt | cut -f 3 -d '=')
           VERSION=${TORCH_V}-$(date +'%Y.%m.%d')
           NUM_SUFFIX=$(githubrelease release Idein/docker-pytorch list | grep 'Tag name' | grep "${VERSION}" | wc | awk '{print $1}')
-          githubrelease release Idein/docker-pytorch create ${VERSION}-${NUM_SUFFIX} --publish
+          githubrelease --github-token $GITHUB_TOKEN release Idein/docker-pytorch create ${VERSION}-${NUM_SUFFIX} --publish
