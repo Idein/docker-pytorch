@@ -1,0 +1,26 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install githubrelease
+      - name: Release
+        run: |
+          TORCH_V=v$(grep '^torch' requirements.txt | cut -f 3 -d '=')
+          VERSION=${TORCH_V}-$(date +'%Y.%m.%d')
+          NUM_SUFFIX=$(githubrelease release Idein/docker-pytorch list | grep 'Tag name' | grep "${VERSION}" | wc | awk '{print $1}')
+          githubrelease release Idein/docker-pytorch create ${VERSION}-${NUM_SUFFIX} --publish
