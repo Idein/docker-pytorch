@@ -16,7 +16,7 @@ jobs:
           TORCH_V=v$(grep '^torch' requirements.txt | cut -f 3 -d '=')
           VERSION=${TORCH_V}-$(date +'%Y.%m.%d')
           HEADER="Authorization: token $GITHUB_TOKEN"
-          API_URL='https://api.github.com/repos/Idein/docker-pytorch/releases&per_page=100'
+          API_URL='https://api.github.com/repos/Idein/docker-pytorch/releases?per_page=100'
           NUM_SUFFIX=$(curl -H $HEADER $API_URL 2>/dev/null  | jq -r '.[].tag_name' | grep "${VERSION}" | wc | awk '{print $1}')
           echo ::set-output name=version::${VERSION}-${NUM_SUFFIX}
         env:
