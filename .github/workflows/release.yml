@@ -13,7 +13,7 @@ jobs:
       - name: Create Version
         id: create_version
         run: |
-          TORCH_V=v$(grep '^torch' requirements.txt | cut -f 3 -d '=')
+          TORCH_V=v$(grep '^torch==' requirements.txt | cut -f 3 -d '=')
           VERSION=${TORCH_V}-$(date +'%Y.%m.%d')
           HEADER="Authorization: token $GITHUB_TOKEN"
           API_URL='https://api.github.com/repos/Idein/docker-pytorch/releases?per_page=100'
