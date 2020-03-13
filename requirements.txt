@@ -7,7 +7,7 @@ opencv-python==4.2.0.32
 optuna==1.1.0
 pandas==1.0.1
 Pillow-SIMD==7.0.0.post3
-progressbar2==3.47.0
+progressbar2==3.50.0
 pytorch-ignite==0.3.0
 scikit-image==0.16.2
 scikit-learn==0.22.1
