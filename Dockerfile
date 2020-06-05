@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-    git gcc python3 python3-pip python3.7 libpython3.7-dev python-opencv zlib1g-dev libjpeg62-dev curl ca-certificates tree && \
+    git gcc python3 python3-pip python3.7 libpython3.7-dev python3-opencv zlib1g-dev libjpeg62-dev curl ca-certificates tree && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 RUN cd $(dirname $(which python3.7)) && rm python3 && ln -s python3.7 python3
 
