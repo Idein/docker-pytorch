@@ -13,7 +13,7 @@ pytorch-pfn-extras==0.2.1
 scikit-image==0.17.2
 scikit-learn==0.23.1
 scipy==1.5.0
-tensorboardX==2.0
+tensorboardX==2.1
 torch==1.5.1
 torchvision==0.6.1
 tqdm==4.47.0
