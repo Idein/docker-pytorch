@@ -8,7 +8,7 @@ optuna==1.5.0
 pandas==1.0.5
 Pillow-SIMD==7.0.0.post3
 progressbar2==3.51.4
-pytorch-ignite==0.4.0.post1
+pytorch-ignite==0.4.1
 pytorch-pfn-extras==0.2.1
 scikit-image==0.17.2
 scikit-learn==0.23.1
