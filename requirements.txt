@@ -5,7 +5,7 @@ nnoir==1.0.5
 numba==0.51.2
 opencv-python==4.4.0.44
 optuna==2.2.0
-pandas==1.1.3
+pandas==1.1.4
 Pillow-SIMD==7.0.0.post3
 progressbar2==3.53.1
 pytorch-ignite==0.4.2
