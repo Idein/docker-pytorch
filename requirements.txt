@@ -1,5 +1,5 @@
 h5py==3.1.0
-joblib==0.17.0
+joblib==1.0.0
 matplotlib==3.3.3
 nnoir==1.0.5
 numba==0.51.2
