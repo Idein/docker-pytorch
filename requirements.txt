@@ -4,7 +4,7 @@ matplotlib==3.3.3
 nnoir==1.0.5
 numba==0.51.2
 opencv-python==4.5.1.48
-optuna==2.3.0
+optuna==2.4.0
 pandas==1.2.0
 Pillow-SIMD==7.0.0.post3
 progressbar2==3.53.1
