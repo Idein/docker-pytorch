@@ -2,7 +2,7 @@ h5py==3.2.1
 joblib==1.0.1
 matplotlib==3.3.4
 nnoir==1.0.5
-numba==0.53.0
+numba==0.53.1
 opencv-python==4.5.1.48
 optuna==2.6.0
 pandas==1.2.3
