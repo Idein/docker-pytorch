@@ -16,5 +16,5 @@ scipy==1.6.2
 tensorboardX==2.2
 torch==1.8.1
 torchvision==0.9.1
-tqdm==4.59.0
+tqdm==4.60.0
 xmltodict==0.12.0
