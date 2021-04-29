@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: torchvision
+    versions:
+    - 0.9.0
+    - 0.9.1
+  - dependency-name: matplotlib
+    versions:
+    - 3.4.0
+  - dependency-name: tqdm
+    versions:
+    - 4.57.0
