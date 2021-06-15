@@ -3,7 +3,7 @@ joblib==1.0.1
 matplotlib==3.4.2
 nnoir==1.0.5
 numba==0.53.1
-opencv-python==4.5.2.52
+opencv-python==4.5.2.54
 optuna==2.8.0
 pandas==1.2.4
 Pillow-SIMD==7.0.0.post3
