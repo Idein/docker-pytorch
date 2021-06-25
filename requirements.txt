@@ -1,4 +1,4 @@
-h5py==3.2.1
+h5py==3.3.0
 joblib==1.0.1
 matplotlib==3.4.2
 nnoir==1.0.5
