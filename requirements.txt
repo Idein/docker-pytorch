@@ -11,7 +11,7 @@ progressbar2==3.53.3
 pytorch-ignite==0.4.6
 pytorch-pfn-extras==0.5.0
 scikit-image==0.18.3
-scikit-learn==0.24.2
+scikit-learn==1.0
 scipy==1.7.1
 tensorboardX==2.4
 torch==1.9.1
