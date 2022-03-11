@@ -14,7 +14,7 @@ scikit-image==0.19.2
 scikit-learn==1.0.2
 scipy==1.8.0
 tensorboardX==2.5
-torch==1.10.2
-torchvision==0.11.3
+torch==1.11.0
+torchvision==0.12.0 
 tqdm==4.63.0
 xmltodict==0.12.0
