@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-    git gcc python3 python3-pip python3.9 libpython3.9-dev zlib1g-dev libjpeg62-dev curl ca-certificates tree \
+    git gcc python3 python3-pip python3.10 libpython3.10-dev zlib1g-dev libjpeg62-dev curl ca-certificates tree \
     libglib2.0-0 libsm6 libice6 libxrender1 libxext6 libx11-6 && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 RUN cd $(dirname $(which python3.9)) && rm python3 && ln -s python3.9 python3
