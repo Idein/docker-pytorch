@@ -10,7 +10,7 @@ RUN apt-get update -y && \
     git gcc python3 python3-pip python3.10 libpython3.10-dev zlib1g-dev libjpeg62-dev curl ca-certificates tree \
     libglib2.0-0 libsm6 libice6 libxrender1 libxext6 libx11-6 && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
-RUN cd $(dirname $(which python3.9)) && rm python3 && ln -s python3.9 python3
+RUN cd $(dirname $(which python3.10)) && rm python3 && ln -s python3.10 python3
 
 COPY requirements.txt /requirements.txt
 RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python3 && \
