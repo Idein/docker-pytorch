@@ -9,7 +9,7 @@ pandas==2.2.2
 Pillow-SIMD==9.0.0.post1
 progressbar2==4.4.2
 pytorch-ignite==0.5.0.post2
-pytorch-pfn-extras==0.7.6
+pytorch-pfn-extras==0.7.7
 scikit-image==0.24.0
 scikit-learn==1.5.1
 scipy==1.14.0
