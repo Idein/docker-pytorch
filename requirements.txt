@@ -17,5 +17,5 @@ tensorboardX==2.6.2.2
 torch==2.4.0
 torchvision==0.19.0
 tqdm==4.66.4
-transformers==4.43.3
+transformers==4.43.4
 xmltodict==0.13.0
