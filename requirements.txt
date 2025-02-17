@@ -12,7 +12,7 @@ pytorch-ignite==0.5.1
 pytorch-pfn-extras==0.8.1
 scikit-image==0.25.1
 scikit-learn==1.6.1
-scipy==1.15.1
+scipy==1.15.2
 tensorboardX==2.6.2.2
 torch==2.6.0
 torchvision==0.21.0
