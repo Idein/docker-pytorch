@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-    git gcc python3 python3-pip python3.10 libpython3.10-dev zlib1g-dev libjpeg62-dev curl ca-certificates tree \
+    git gcc python3 python3-pip python3-venv python3.12 libpython3.12-dev zlib1g-dev libjpeg62-dev curl ca-certificates tree bash \
     libglib2.0-0 libsm6 libice6 libxrender1 libxext6 libx11-6 && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 RUN cd $(dirname $(which python3.10)) && rm python3 && ln -s python3.10 python3
