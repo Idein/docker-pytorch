@@ -10,7 +10,6 @@ RUN apt-get update -y && \
     libglib2.0-0 libsm6 libice6 libxrender1 libxext6 libx11-6 && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 COPY requirements.txt /requirements.txt
-RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python3 && \
-    pip --no-cache-dir install -r ./requirements.txt
+RUN pip --no-cache-dir install --break-system-packages -r ./requirements.txt
 # Use Agg backend for matplotlib
 ENV DISPLAY 0
