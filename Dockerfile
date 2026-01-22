@@ -12,4 +12,4 @@ RUN apt-get update -y && \
 COPY requirements.txt /requirements.txt
 RUN pip --no-cache-dir install --break-system-packages -r ./requirements.txt
 # Use Agg backend for matplotlib
-ENV DISPLAY 0
+ENV DISPLAY=0
