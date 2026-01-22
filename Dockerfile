@@ -1,8 +1,7 @@
-ARG CUDA_VERSION=12.1.1
-ARG CUDNN_VERSION=8
+ARG CUDA_VERSION=13.1.0
 ARG IMGTYPE=runtime
-ARG OS=ubuntu22.04
-FROM nvidia/cuda:${CUDA_VERSION}-cudnn${CUDNN_VERSION}-${IMGTYPE}-${OS}
+ARG OS=ubuntu24.04
+FROM nvidia/cuda:${CUDA_VERSION}-${IMGTYPE}-${OS}
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
