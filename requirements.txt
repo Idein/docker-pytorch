@@ -1,6 +1,6 @@
 h5py==3.16.0
 joblib==1.6.0
-matplotlib==3.11.1
+matplotlib==3.11.2
 nnoir==1.4.0
 numba==0.67.0
 opencv-python==4.11.0.86
