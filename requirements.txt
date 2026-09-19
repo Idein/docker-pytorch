@@ -6,7 +6,7 @@ numba==0.67.0
 opencv-python==4.11.0.86
 optuna==5.0.0
 pandas==3.0.5
-Pillow-SIMD==9.5.0.post2
+Pillow-SIMD==12.1.1.post0
 progressbar2==4.6.0
 pytorch-ignite==0.5.5
 pytorch-pfn-extras==0.9.0
